@@ -1,0 +1,14 @@
+name = "mixus-merge-mcp-local"
+main = "src/index.ts"
+compatibility_date = "2024-05-01"
+
+[vars]
+MERGE_TENANT = "US"
+
+# Add production MCP server URL
+[env.production]
+vars = { MERGE_MCP_SERVER_URL = "https://your-production-mcp-server.com" }
+
+# Add staging MCP server URL
+[env.staging]
+vars = { MERGE_MCP_SERVER_URL = "https://your-staging-mcp-server.com" } 
